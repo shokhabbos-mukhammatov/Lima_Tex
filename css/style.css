@@ -1,7 +1,18 @@
-body{
-    font-family: 'Roboto Condensed', sans-serif;
+header{
+  background: url('head.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    background-color: rgb(250, 250, 250); 
+}
+.navbar{
+    
+    background: rgb(250, 250, 250);
+background: linear-gradient(0deg, rgb(250, 250, 250) 0%, rgba(84,84,84,1) 100%);
+}
 .navbar-brand img{
     width: 100px;
 }
@@ -11,16 +22,45 @@ body{
 }
 
 .navbar .navbar-nav .nav-link:hover{
-    background-color: rgb(202, 136, 136);
-    color: black;
+    border-radius: 35px;
+    background-color: rgb(237, 241, 0);
+    color: white;
+    display: inline-block;
+		padding: 10px;
+		margin: 0 5px;
+		border: 2px solid #111111;
+		transition: 0.2s ease;
+			border: 2px solid white;
 }
 
 .navbar .navbar-nav .nav-link:active{
+    border-radius: 35px;
     background-color: rgb(194, 84, 84);
     color: black;
     font-weight: bold;
 }
+.carousel-control-prev-icon{
+ background-color: rgb(70, 70, 70); 
+ border-radius: 30px;
+}
+.carousel-control-next-icon{
+  border-radius: 30px ;
+background-color: rgb(70, 70, 70);
+}
+.modal-header{
+  background-color: #8d8d8d;
+}
+.modal-footer{
+  background-color: #8d8d8d;
 
+}
+.col-md-10{
+  display: flex;
+  justify-content: space-between;
+}
+h4{
+  color: #111111;
+}
 .intro{
     display: flex;
     align-items: center;
@@ -29,13 +69,13 @@ body{
 
 .intro img{
     width: 100%;
-    border-radius: 50%;
-    border: 3px solid lightblue;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 0, 0);
     overflow: hidden;
 }
 
 .name{
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     
 }
@@ -52,7 +92,7 @@ body{
 }
 
 .description{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -75,3 +115,66 @@ body{
         overflow: hidden;
     }
 }
+
+.head{
+    background-color: aqua;
+}
+
+.bg-xx{
+    background-color: rgb(17, 205, 230);
+}
+
+.rainbow-text {
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+      #CA4246 16.666%, 
+      #E16541 16.666%, 
+      #E16541 33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 50%, 
+      #8B9862 50%, 
+      #8B9862 66.666%, 
+      #476098 66.666%, 
+      #476098 83.333%, 
+      #A7489B 83.333%);
+    
+    background-size: 57%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: rainbow-text-animation-rev 0.5s ease forwards;
+    cursor: pointer;
+  }
+  .rainbow-text:hover {
+    animation: rainbow-text-animation 0.5s ease forwards;
+  }
+  @keyframes rainbow-text-animation {
+    0% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+  }
+  @keyframes rainbow-text-animation-rev {
+    0% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+  }
+  
